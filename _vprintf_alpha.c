@@ -24,7 +24,10 @@ int _vprintf_alpha(const char *format, va_list args)
 			{
 				state = 1;
 			}
-			_putchar(*format);
+			else
+			{
+				_putchar(*format);
+			}
 		}
 		else if (state == 1)
 		{
@@ -43,7 +46,7 @@ int _vprintf_alpha(const char *format, va_list args)
 			}
 			state = 0;
 		}
-		format++
+		format++;
 		}
 		return (0);
 }

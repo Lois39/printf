@@ -15,8 +15,7 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 	_vprintf_alpha(format, args);
-	_vprintf_decimal(format, args);
-	_vprintf_interger(format, args);
+
 	va_end(args);
 
 	return (0);
